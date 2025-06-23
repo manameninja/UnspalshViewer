@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Loz-PP-sZJ">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <rect key="frame" x="0.0" y="118" width="393" height="734"/>
                 </imageView>
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="jrN-ki-tMn">
                     <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
@@ -32,7 +32,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="jrN-ki-tMn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Fev-Tj-GTt"/>
-                <constraint firstItem="Loz-PP-sZJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ole-7j-SCk"/>
+                <constraint firstItem="Loz-PP-sZJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ole-7j-SCk"/>
                 <constraint firstAttribute="bottom" secondItem="Loz-PP-sZJ" secondAttribute="bottom" id="X6L-N2-Iu6"/>
                 <constraint firstItem="jrN-ki-tMn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vM1-qJ-s0o"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Loz-PP-sZJ" secondAttribute="trailing" id="yS1-PC-Ipf"/>
