@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoCell" customModule="UnsplashViewer" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="x2X-G1-UCJ" customClass="PhotoCell" customModule="UnsplashViewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="528"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7US-9v-cCA">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="528"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L8b-H2-99w">
+                        <rect key="frame" x="8" y="8" width="264" height="264"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="L8b-H2-99w" secondAttribute="height" multiplier="1:1" id="WhN-Pq-JA7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4C-K6-wex">
+                        <rect key="frame" x="8" y="280" width="264" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="U5O-Q9-QgZ">
+                        <rect key="frame" x="247" y="499.33333333333331" width="25" height="17.999999999999943"/>
+                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Uxo-8H-8Ub"/>
+                            <constraint firstAttribute="width" constant="25" id="hpK-Ni-uSS"/>
+                        </constraints>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPE-Rc-7Jq">
+                        <rect key="frame" x="8" y="497.66666666666669" width="239" height="21.000000000000057"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" name="AccentColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="U5O-Q9-QgZ" secondAttribute="trailing" constant="8" id="66p-8D-P3w"/>
+                    <constraint firstItem="d4C-K6-wex" firstAttribute="top" secondItem="L8b-H2-99w" secondAttribute="bottom" constant="8" id="Thn-6V-sz0"/>
+                    <constraint firstAttribute="bottom" secondItem="U5O-Q9-QgZ" secondAttribute="bottom" constant="8" id="Vwa-2N-mgy"/>
+                    <constraint firstItem="L8b-H2-99w" firstAttribute="leading" secondItem="7US-9v-cCA" secondAttribute="leading" constant="8" id="X5A-t6-1wy"/>
+                    <constraint firstItem="U5O-Q9-QgZ" firstAttribute="leading" secondItem="YPE-Rc-7Jq" secondAttribute="trailing" id="ZNy-5W-Zxa"/>
+                    <constraint firstItem="YPE-Rc-7Jq" firstAttribute="centerY" secondItem="U5O-Q9-QgZ" secondAttribute="centerY" id="fxh-JO-rM2"/>
+                    <constraint firstAttribute="trailing" secondItem="L8b-H2-99w" secondAttribute="trailing" constant="8" id="gEz-Wz-uko"/>
+                    <constraint firstAttribute="trailing" secondItem="d4C-K6-wex" secondAttribute="trailing" constant="8" id="gvT-MK-iOg"/>
+                    <constraint firstItem="YPE-Rc-7Jq" firstAttribute="leading" secondItem="7US-9v-cCA" secondAttribute="leading" constant="8" id="hN3-AD-yf1"/>
+                    <constraint firstItem="L8b-H2-99w" firstAttribute="top" secondItem="7US-9v-cCA" secondAttribute="top" constant="8" id="iWZ-My-noH"/>
+                    <constraint firstItem="d4C-K6-wex" firstAttribute="leading" secondItem="7US-9v-cCA" secondAttribute="leading" constant="8" id="w8s-Ya-IFZ"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </collectionViewCellContentView>
+            <size key="customSize" width="280" height="528"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="d4C-K6-wex" id="lKN-mn-oYT"/>
+                <outlet property="imageView" destination="L8b-H2-99w" id="E1F-ss-rF0"/>
+                <outlet property="likesLabel" destination="YPE-Rc-7Jq" id="Bkp-Z9-q5n"/>
+            </connections>
+            <point key="canvasLocation" x="299.23664122137404" y="147.18309859154931"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <namedColor name="AccentColor">
+            <color red="0.26499998569488525" green="0.25499999523162842" blue="0.33799999952316284" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
