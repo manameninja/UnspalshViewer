@@ -13,7 +13,7 @@
 - Orientation Support
 - Error Handling (Alerts)
 - Кеширование изображений
-- ActivityIndicator во время загрузки
+- SPM
 
 ## 🚀 Установка
 
